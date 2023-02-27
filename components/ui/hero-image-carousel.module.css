@@ -1,0 +1,19 @@
+.image_container {
+  padding: 0;
+  width: 100vw;
+  height: 70vh;
+}
+
+.hero_img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.caption_overlay {
+  background-color: rgb(53, 52, 54);
+  width: 30vw;
+  height: auto;
+  opacity: 0.77;
+  z-index: 3;
+}
