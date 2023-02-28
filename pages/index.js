@@ -16,7 +16,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <HomePageContent />
-        <h1>Selective Travel</h1>
       </main>
     </>
   );
