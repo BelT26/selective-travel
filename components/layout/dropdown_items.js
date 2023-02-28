@@ -73,7 +73,7 @@ const dropdownItems = [
       },
       {
         title: "Caneva World",
-        slug2: "caneva-world",
+        slug2: "/caneva-world",
       },
     ],
   },

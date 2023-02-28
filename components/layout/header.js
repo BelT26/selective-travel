@@ -10,7 +10,7 @@ import NavDropdowns from "./nav-dropdowns";
 function Header() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
-      <Container fluid>
+      <Container fluid className={classes.navbar_container}>
         <Navbar.Brand href="/">Selective Travel</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

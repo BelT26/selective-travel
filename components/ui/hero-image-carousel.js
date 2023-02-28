@@ -13,7 +13,7 @@ function HeroImageCarousel({ images }) {
               className={classes.hero_img}
               src={image.imgSrc}
               alt={image.alt}
-              height={700}
+              height={600}
               width={800}
             />
             <div class={classes.caption_overlay}>
