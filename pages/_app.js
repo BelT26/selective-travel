@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <SSRProvider>
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps} className="main_content" />
       </Layout>
     </SSRProvider>
   );

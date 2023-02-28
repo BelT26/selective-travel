@@ -9,13 +9,8 @@ function Intro() {
   return (
     <Container className={classes.intro_container}>
       <Row>
-        <Col style={{ textAlign: "center" }}>
-          <h1>Welcome to Selective Travel</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
+        <Col xs={12} lg={6}>
+          <p className="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est
             aliquam nulla suscipit praesentium eius dolor voluptates. Mollitia
             magnam ullam nostrum, natus aperiam dolorem, minima quo odit velit
@@ -28,11 +23,11 @@ function Intro() {
             aliquam? Quas, fuga?
           </p>
         </Col>
-        <Col>
+        <Col xs={12} lg={6} style={{ textAlign: "center" }}>
           <Image
             src={TravelImg}
-            width={300}
-            height={200}
+            width={400}
+            height={300}
             alt="camera, binoculars, map and pipe"
           />
         </Col>

@@ -1,0 +1,17 @@
+.form_selector {
+  margin: 20px;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+.inner_form_container {
+  margin-top: 30px;
+  background-color: silver;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.active_form {
+  text-decoration: none;
+  font-weight: bold;
+}
