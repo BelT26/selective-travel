@@ -14,7 +14,7 @@ function AccommodationForm() {
       </Form.Group>
       <Form.Group className="mb-3" controlId="numPax">
         <Form.Label>Number of Passengers</Form.Label>
-        <Form.Control type="number" placeholder={2} min={1} max={30} />
+        <Form.Control type="number" placeholder={2} min={1} max={20} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="fromDate">
         <Form.Label>From</Form.Label>

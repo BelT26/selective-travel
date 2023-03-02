@@ -1,3 +1,7 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.main_content {
+  background-color: rgb(244, 239, 239);
+}

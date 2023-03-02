@@ -1,5 +1,5 @@
-function WellnessPage() {
-  return <h1>Fun and Wellness Page</h1>;
+function ThemeParks() {
+  return <h1>Theme Parks</h1>
 }
 
-export default WellnessPage;
+export default ThemeParks
