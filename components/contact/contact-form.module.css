@@ -4,3 +4,17 @@
   padding: 20px;
   border-radius: 10px;
 }
+
+.message_container {
+  margin: 30px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.success {
+  color: forestgreen;
+}
+
+.error {
+  color: crimson;
+}
