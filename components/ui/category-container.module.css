@@ -1,0 +1,25 @@
+.category_container {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  max-width: 90vw;
+}
+
+.image_container {
+  padding: 20px;
+}
+
+.text_container {
+  padding: 20px;
+}
+
+.category_heading {
+  margin: 10px 20px;
+}
+
+.imgtxt_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
