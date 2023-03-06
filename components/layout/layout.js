@@ -1,11 +1,13 @@
 import Header from "./header";
 import Footer from "./footer";
+import classes from "./layout.module.css";
 
 function Layout(props) {
   return (
     <>
       <Header />
-      {props.children}
+      <div className={classes.main_content}>{props.children}</div>
+
       <Footer />
     </>
   );

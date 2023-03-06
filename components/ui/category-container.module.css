@@ -1,9 +1,11 @@
 .category_container {
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
   max-width: 90vw;
+  background-color: rgb(39, 38, 38);
+  color: whitesmoke;
 }
 
 .image_container {

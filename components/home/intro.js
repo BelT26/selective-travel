@@ -24,12 +24,14 @@ function Intro() {
           </p>
         </Col>
         <Col xs={12} lg={6} style={{ textAlign: "center" }}>
-          <Image
-            src={TravelImg}
-            width={400}
-            height={300}
-            alt="camera, binoculars, map and pipe"
-          />
+          <div className={classes.intro_img_container}>
+            <Image
+              src={TravelImg}
+              width={350}
+              height={230}
+              alt="camera, binoculars, map and pipe"
+            />
+          </div>
         </Col>
       </Row>
     </Container>

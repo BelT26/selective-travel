@@ -19,7 +19,7 @@ function AnimatedButton(props) {
           <Link
             href={props.link}
             className={classes.animated_button}
-            style={{ color: "white" }}
+            style={{ color: "black" }}
           >
             {props.children}
             <span>
