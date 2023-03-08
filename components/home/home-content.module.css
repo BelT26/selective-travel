@@ -2,3 +2,25 @@
   text-align: center;
   margin: 30px auto;
 }
+
+.subheading {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+}
+
+.subheading_col {
+  text-align: center;
+  padding: 20px;
+}
+
+.reason_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.reason_text {
+  text-align: justify;
+  padding: 10px 30px;
+}

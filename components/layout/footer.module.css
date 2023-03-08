@@ -1,8 +1,7 @@
 .footer {
-  background-color: RGB(33, 37, 41);
+  background-color: black;
   color: whitesmoke;
-
-  padding: 15px;
+  padding: 25px;
 }
 
 .social_icon_row {
@@ -10,5 +9,5 @@
 }
 
 .social_icon {
-  margin-right: 30px;
+  margin: 10px 30px;
 }

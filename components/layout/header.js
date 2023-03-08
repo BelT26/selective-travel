@@ -11,10 +11,10 @@ function Header() {
   return (
     <Navbar style={{ backgroundColor: "black" }} expand="lg" variant="dark">
       <Container fluid className={classes.navbar_container}>
-        <Navbar.Brand href="/">Selective Travel</Navbar.Brand>
+        <Navbar.Brand href="/">TOP CONCIERGE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto ps-3">
+          <Nav className="ms-auto">
             <Nav.Link as="span">
               <CustomNavLink href="/">Home</CustomNavLink>
             </Nav.Link>
