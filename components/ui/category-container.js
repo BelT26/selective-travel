@@ -18,17 +18,16 @@ function CategoryContainer(props) {
             height={240}
             width={340}
             alt=""
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", marginBottom: "20" }}
           />
+          <AnimatedButton link="/">{props.buttonText}</AnimatedButton>
         </div>
-
         <div className={classes.text_container}>
           {props.paragraphs.map((paragraph) => (
             <p>{paragraph}</p>
           ))}
         </div>
       </div>
-      <AnimatedButton link="/">{props.buttonText}</AnimatedButton>
     </div>
   );
 }

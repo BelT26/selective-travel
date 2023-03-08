@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Selective Travel</title>
+        <title>Top Concierge</title>
         <meta
           name="description"
-          content="Selective Travel provides all the services you need for you holiday to Lake Garda"
+          content="Top Concierge provides all the services you need for you holiday to Lake Garda"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className={styles.main_content}>
         <HomePageContent />
       </main>
     </>

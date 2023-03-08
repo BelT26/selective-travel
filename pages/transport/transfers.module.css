@@ -15,10 +15,15 @@
   width: 100vw;
 }
 
-.caption_overlay {
-  background-color: rgb(53, 52, 54);
-  width: 30vw;
-  height: auto;
-  opacity: 0.77;
-  z-index: 3;
+.inner_form_container {
+  margin-top: 30px;
+  background-color: rgb(81, 81, 83);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.transfers_heading {
+  text-align: center;
+  margin: 20px auto;
 }

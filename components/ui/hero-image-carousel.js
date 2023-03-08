@@ -6,7 +6,7 @@ import classes from "./hero-image-carousel.module.css";
 function HeroImageCarousel({ images }) {
   return (
     <Container fluid className={classes.image_container}>
-      <Carousel fade>
+      <Carousel fade className={classes.carousel_slide}>
         {images.map((image) => (
           <Carousel.Item key={image.id}>
             <Image

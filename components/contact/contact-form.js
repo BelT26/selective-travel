@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import classes from "./contact-form.module.css";
+import AnimatedButton from "../ui/animated-button";
 
 function ContactForm() {
   const [fullname, setFullname] = useState("");
@@ -92,49 +95,70 @@ function ContactForm() {
     <>
       <Container className={classes.inner_form_container}>
         <Form onSubmit={handleSubmit}>
-          <Form.Group
-            className="mb-3"
-            controlId="name"
-            value={fullname}
-            onChange={(event) => setFullname(event.target.value)}
-          >
-            <Form.Label>Name</Form.Label>
-            <Form.Control type="text" />
-          </Form.Group>
-          <Form.Group
-            className="mb-3"
-            controlId="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          >
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" />
-          </Form.Group>
-          <Form.Group
-            className="mb-3"
-            controlId="subject"
-            value={subject}
-            onChange={(event) => setSubject(event.target.value)}
-          >
-            <Form.Label>Enquiry Type</Form.Label>
-            <Form.Select aria-label="subject">
-              <option value="accommodation">Accommodation</option>
-              <option value="excursions">Excursions</option>
-              <option value="transfers">Transfers</option>
-            </Form.Select>
-          </Form.Group>
-          <Form.Group
-            className="mb-3"
-            controlId="message"
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
-          >
-            <Form.Label>Message</Form.Label>
-            <Form.Control type="textarea" rows={5} />
-          </Form.Group>
-          <Button variant="dark" onClick={handleSubmit}>
-            {buttonText}
-          </Button>
+          <Row>
+            <Col xs={12} lg={8} className={classes.variable_column}>
+              <Form.Group
+                className="mb-3"
+                controlId="name"
+                value={fullname}
+                onChange={(event) => setFullname(event.target.value)}
+              >
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="text" />
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={8} className={classes.variable_column}>
+              <Form.Group
+                className="mb-3"
+                controlId="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              >
+                <Form.Label>Email</Form.Label>
+                <Form.Control type="email" />
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={7} className={classes.variable_column}>
+              <Form.Group
+                className="mb-3"
+                controlId="subject"
+                value={subject}
+                onChange={(event) => setSubject(event.target.value)}
+              >
+                <Form.Label>Enquiry Type</Form.Label>
+                <Form.Select aria-label="subject">
+                  <option value="accommodation">Accommodation</option>
+                  <option value="excursions">Excursions</option>
+                  <option value="transfers">Transfers</option>
+                </Form.Select>
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} lg={10} className={classes.variable_column}>
+              <Form.Group
+                className="mb-3"
+                controlId="message"
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              >
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  type="textarea"
+                  rows={5}
+                  style={{ height: 200 }}
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <AnimatedButton onClick={handleSubmit} link="/">
+            Send
+          </AnimatedButton>
         </Form>
       </Container>
       <div className={classes.message_container}>

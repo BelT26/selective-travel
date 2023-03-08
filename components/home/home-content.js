@@ -10,9 +10,11 @@ import classes from "./home-content.module.css";
 import ItalyImg from "../../public/images/venice.jpg";
 import CroatiaImg from "../../public/images/croatia.jpg";
 import GolfImg from "../../public/images/golf.jpg";
+import CategoryGrid from "./category-grid";
 
 function HomePageContent() {
   const placeholderText = [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos velit officiis nulla eos laudantium aspernatur provident obcaecati eaque debitis, quaerat dignissimos neque rerum magnam nemo fugit eligendi adipisci natus.",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos velit officiis nulla eos laudantium aspernatur provident obcaecati eaque debitis, quaerat dignissimos neque rerum magnam nemo fugit eligendi adipisci natus.",
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quos velit officiis nulla eos laudantium aspernatur provident obcaecati eaque debitis, quaerat dignissimos neque rerum magnam nemo fugit eligendi adipisci natus.",
   ];
@@ -20,12 +22,12 @@ function HomePageContent() {
   return (
     <>
       <HeroImageCarousel images={carouselImages} />
-      <Row>
+      {/* <Row>
         <Col className={classes.main_heading}>
           <h1 className="display-4">Welcome to Selective Travel</h1>
         </Col>
-      </Row>
-      <Container>
+      </Row> */}
+      {/* <Container>
         <Row>
           <Col xs={12} lg={4}>
             <Container>
@@ -66,7 +68,9 @@ function HomePageContent() {
           txtColSize={7}
           imgColSize={5}
         />
-      </Container>
+      </Container> */}
+
+      <CategoryGrid />
     </>
   );
 }

@@ -153,7 +153,7 @@ function TransferForm() {
       <Button
         variant="light"
         onClick={() => setAddReturn(true)}
-        style={{ marginTop: "20px", marginBottom: "20px" }}
+        style={{ marginTop: "20px" }}
       >
         Add Return
       </Button>

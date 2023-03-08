@@ -9,12 +9,12 @@ import NavDropdowns from "./nav-dropdowns";
 
 function Header() {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar style={{ backgroundColor: "black" }} expand="lg" variant="dark">
       <Container fluid className={classes.navbar_container}>
         <Navbar.Brand href="/">Selective Travel</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto ps-3">
             <Nav.Link as="span">
               <CustomNavLink href="/">Home</CustomNavLink>
             </Nav.Link>
@@ -23,111 +23,6 @@ function Header() {
             </Nav.Link>
             <NavDropdowns lists={dropdownItems} />
 
-            {/* <NavDropdown title="Concierge" id="basic-nav-dropdown">
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span"></NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <NavDropdown.Divider />
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-            </NavDropdown>
-            <NavDropdown title="Coach Excursions" id="basic-nav-dropdown">
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <NavDropdown.Divider />
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-            </NavDropdown>
-            <NavDropdown title="Boat Trips" id="basic-nav-dropdown">
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <NavDropdown.Divider />
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-            </NavDropdown>
-            <NavDropdown title="Transport" id="basic-nav-dropdown">
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <NavDropdown.Divider />
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-            </NavDropdown>
-            <NavDropdown title="Theme Parks" id="basic-nav-dropdown">
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-              <NavDropdown.Divider />
-              <CustomNavLink href="/">
-                <NavDropdown.Item as="span">Action</NavDropdown.Item>
-              </CustomNavLink>
-            </NavDropdown> */}
             <Nav.Link as="span">
               <CustomNavLink href="/contact">Contact</CustomNavLink>
             </Nav.Link>

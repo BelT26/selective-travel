@@ -54,9 +54,13 @@ const dropdownItems = [
     ],
   },
   {
-    main_title: "Transport",
+    main_title: "Tranfers",
     slug1: "/transport",
     dropdowns: [
+      {
+        title: "All Transfers",
+        slug2: "/",
+      },
       {
         title: "Transport",
         slug2: "/transport",
