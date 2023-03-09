@@ -3,7 +3,8 @@
   margin: 30px auto;
 }
 
-.subheading {
+.subheading,
+.subheading_top {
   margin: 20px auto;
   font-weight: 300;
   color: rgb(223, 182, 79);

@@ -21,7 +21,7 @@ function Footer() {
             <GiSmartphone className={classes.phone_icon} /> : +39 045 7236870
           </p>
           <p>
-            <FaRegEnvelope /> : info@selective-travel.com
+            <FaRegEnvelope /> : info@top-concierge.com
           </p>
         </Col>
         <Col className={classes.social_icon_col} xs={12} md={6} xl={4}>

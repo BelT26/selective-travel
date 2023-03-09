@@ -1,6 +1,6 @@
 .box {
   width: 240px;
-  height: 280px;
+  height: 260px;
   display: inline-block;
   margin: 15px;
 }
@@ -13,9 +13,15 @@
   text-transform: uppercase;
   z-index: 3;
   padding-left: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .category_img {
   object-fit: cover;
+}
+
+@media screen and(max-width: 768px) {
+  .box {
+    margin-bottom: 25px;
+  }
 }

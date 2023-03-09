@@ -12,7 +12,7 @@ function CategoryBox(props) {
         <Image
           src={props.imgSrc}
           alt={props.alt}
-          height={300}
+          height={260}
           width={240}
           className={classes.category_img}
         />

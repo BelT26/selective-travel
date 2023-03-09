@@ -13,7 +13,9 @@ function HomePageContent() {
       <Container>
         <Row>
           <Col className={classes.subheading_col}>
-            <h2 className={classes.subheading}>Why book with Top Concierge</h2>
+            <h2 className={classes.subheading_top}>
+              Why book with Top Concierge
+            </h2>
           </Col>
         </Row>
         <Row>

@@ -25,6 +25,7 @@ const dropdownItems = [
     main_title: "Coach Excursions",
     slug1: "/coach-excursions",
     dropdowns: [
+      { title: "All Excursions", slug2: "/" },
       {
         title: "Venice",
         slug2: "/venice",
