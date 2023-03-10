@@ -16,7 +16,7 @@ function HeroImageCarousel({ images }) {
               height={500}
               width={800}
             />
-            <div class={classes.caption_overlay}>
+            <div className={classes.caption_overlay}>
               <Carousel.Caption
                 style={{
                   backgroundColor: "black",

@@ -15,12 +15,12 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as="span">
+            {/* <Nav.Link as="span">
               <CustomNavLink href="/">Home</CustomNavLink>
             </Nav.Link>
             <Nav.Link as="span">
               <CustomNavLink href="/about">About Us</CustomNavLink>
-            </Nav.Link>
+            </Nav.Link> */}
             <NavDropdowns lists={dropdownItems} />
 
             <Nav.Link as="span">

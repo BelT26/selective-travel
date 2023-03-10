@@ -7,7 +7,7 @@ function ThemeParkDetail() {
   let selectedPark = "";
   console.log("Park name is " + parkName);
 
-  const parks = dropdownItems[4].dropdowns;
+  const parks = dropdownItems[3].dropdowns;
   for (let i = 0; i < parks.length; i++) {
     console.log(parks[i].slug2);
     if (parks[i].slug2 === "/" + parkName) {

@@ -22,10 +22,10 @@ const dropdownItems = [
     ],
   },
   {
-    main_title: "Coach Excursions",
-    slug1: "/coach-excursions",
+    main_title: "Experiences",
+    slug1: "/experiences",
     dropdowns: [
-      { title: "All Excursions", slug2: "/" },
+      { title: "All Experiences", slug2: "/" },
       {
         title: "Venice",
         slug2: "/venice",
@@ -42,20 +42,14 @@ const dropdownItems = [
         title: "Verona Opera",
         slug2: "/verona-opera",
       },
-    ],
-  },
-  {
-    main_title: "Boat Trips",
-    slug1: "/boat-trips",
-    dropdowns: [
       {
-        title: "Boat Trip 1",
-        slug2: "/1",
+        title: "Boat Trip",
+        slug2: "/boat-trip",
       },
     ],
   },
   {
-    main_title: "Tranfers",
+    main_title: "Transport",
     slug1: "/transport",
     dropdowns: [
       {

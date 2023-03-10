@@ -3,13 +3,13 @@ import classes from "./category-grid.module.css";
 import Venice from "../../public/images/venice.jpg";
 import Coach from "../../public/images/gold_coach.jpg";
 import GardaLand from "../../public/images/gardaland.jpg";
-import Boat from "../../public/images/boat_trip.jpg";
+import Arena from "../../public/images/arena.jpg";
 
 const categories = [
   {
-    title: "Excursions",
+    title: "Experiences",
     imgSrc: Venice,
-    href: "/coach-excursions",
+    href: "/experiences",
     alt: "venice",
   },
   {
@@ -25,10 +25,10 @@ const categories = [
     alt: "rollercoaster against a blue sky",
   },
   {
-    title: "Boat Trips",
-    imgSrc: Boat,
-    href: "/boat-trips",
-    alt: "ferry boat on Lake Garda",
+    title: "Verona Opera",
+    imgSrc: Arena,
+    href: "/experiences/verona-opera",
+    alt: "the verona arena at night",
   },
 ];
 
