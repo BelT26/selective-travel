@@ -1,0 +1,36 @@
+.excursion_heading {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+}
+
+.imgtxt_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.summary_text {
+  text-align: justify;
+}
+
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content_right {
+  padding-left: 20px;
+}
+
+.info {
+  font-weight: 400;
+  color: rgb(147, 172, 223);
+  display: inline-block;
+  width: 100px;
+}
+
+.cost {
+  font-weight: 400;
+  display: inline-block;
+}
