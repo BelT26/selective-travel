@@ -15,7 +15,7 @@ const excursions = [
     imgSrc: Venice,
     alt: "a canal in venice with colourful houses",
     cost: 65,
-    duration: "Full day (12 hours)",
+    duration: "Full day",
   },
   {
     title: "Dolomites Tour (from south Lake Garda)",
@@ -25,7 +25,7 @@ const excursions = [
     imgSrc: Dolomites1,
     alt: "the Dolomites in the sunshine",
     cost: 70,
-    duration: "Full day (12 hours)",
+    duration: "Full day",
   },
   {
     title: "Dolomites Tour (from north Lake Garda)",
@@ -35,7 +35,7 @@ const excursions = [
     imgSrc: Dolomites3,
     alt: "the Dolomites in the sunshine",
     cost: 60,
-    duration: "Full day (12 hours)",
+    duration: "Full day",
   },
   {
     title: "Verona Opera",
@@ -45,7 +45,7 @@ const excursions = [
     imgSrc: Opera,
     alt: "people inside the Verona Arena at night waiting for the opera to begin",
     cost: 60,
-    duration: "5 hours",
+    duration: "Half day",
   },
   {
     title: "Boat Trip",
@@ -55,7 +55,7 @@ const excursions = [
     alt: "a ferry boat crossing Lake Garda",
     imgSrc: Boat,
     cost: 0,
-    duration: "6 hours",
+    duration: "Half day",
   },
 ];
 

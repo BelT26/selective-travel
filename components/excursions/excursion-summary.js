@@ -2,6 +2,8 @@ import classes from "./excursion-summary.module.css";
 import Image from "next/image";
 import AnimatedButton from "../ui/animated-button";
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function ExcursionSummary({ excursion }) {
   return (
@@ -14,8 +16,8 @@ function ExcursionSummary({ excursion }) {
           <Image
             src={excursion.imgSrc}
             className={classes.excursion_image}
-            height={180}
-            width={270}
+            height={220}
+            width={320}
             alt=""
             style={{ objectFit: "cover", marginBottom: "10" }}
           />
@@ -26,16 +28,23 @@ function ExcursionSummary({ excursion }) {
               <p className={classes.summary_text}>{paragraph}</p>
             ))}
           </div>
-          <h5 className={classes.info}>Duration </h5>{" "}
-          <h5 className={classes.cost}>{excursion.duration}</h5>
-          <br />
-          <h5 className={classes.info}> Cost </h5>
-          <h5 className={classes.cost}>&euro; {excursion.cost}</h5>
-          <div className={classes.button_container}>
-            <AnimatedButton link="/" className={classes.button}>
-              Book Now
-            </AnimatedButton>
-          </div>
+          <Row>
+            <Col xs={12} lg={8}>
+              <p className={classes.info}>Duration </p>{" "}
+              <p className={classes.cost}>{excursion.duration}</p>
+            </Col>
+            <Col xs={12} lg={4}>
+              <p className={classes.info}> Cost </p>
+              <p className={classes.cost}>
+                <small>from</small> <b>&euro; {excursion.cost}</b>
+              </p>
+              <div className={classes.button_container}>
+                <AnimatedButton link="/" className={classes.button}>
+                  <h6>BOOK NOW</h6>
+                </AnimatedButton>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     </Container>
