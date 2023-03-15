@@ -10,7 +10,7 @@ function StaticHeroImage(props) {
         src={props.imgSrc}
         alt={props.alt}
         height={500}
-        width={600}
+        width={800}
       />
     </Container>
   );

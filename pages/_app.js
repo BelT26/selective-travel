@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap-submenu/dist/index.css";
 import { SSRProvider } from "react-bootstrap";
 import "@/styles/globals.css";
 

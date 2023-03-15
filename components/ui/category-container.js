@@ -18,7 +18,7 @@ function CategoryContainer(props) {
             height={240}
             width={340}
             alt=""
-            style={{ objectFit: "cover", marginBottom: "20" }}
+            style={{ objectFit: "cover", marginBottom: "0" }}
           />
           <AnimatedButton link="/">{props.buttonText}</AnimatedButton>
         </div>

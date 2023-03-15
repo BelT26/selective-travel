@@ -30,4 +30,12 @@
   .imgtxt_container {
     flex-direction: column;
   }
+
+  .catgory_image {
+    width: 300px;
+  }
+
+  .image_container {
+    text-align: center;
+  }
 }

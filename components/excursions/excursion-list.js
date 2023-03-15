@@ -9,6 +9,7 @@ import Boat from "../../public/images/boat_trip.jpg";
 const excursions = [
   {
     title: "Venice",
+    id: "VCE",
     description: [
       "Proin tristique sed augue quis sagittis. Proin pretium lectus id tellus aliquam bibendum. Nullam vitae libero at sem facilisis rutrum ut ut lectus. Sed sit amet orci sed libero tempus tincidunt ut scelerisque elit. Cras ut neque id erat aliquet iaculis. Proin a quam varius, accumsan est eget, pharetra leo. Mauris consequat condimentum mi, vel accumsan leo rutrum porta. Vestibulum quis tempor tellus. Sed nibh metus, volutpat nec justo tincidunt, pretium ornare quam.",
     ],
@@ -16,9 +17,11 @@ const excursions = [
     alt: "a canal in venice with colourful houses",
     cost: 65,
     duration: "Full day",
+    button_link: "/experiences/coach-excursions/venice",
   },
   {
     title: "Dolomites Tour (from south Lake Garda)",
+    id: "DOL-S",
     description: [
       "Proin tristique sed augue quis sagittis. Proin pretium lectus id tellus aliquam bibendum. Nullam vitae libero at sem facilisis rutrum ut ut lectus. Sed sit amet orci sed libero tempus tincidunt ut scelerisque elit. Cras ut neque id erat aliquet iaculis. Proin a quam varius, accumsan est eget, pharetra leo. Mauris consequat condimentum mi, vel accumsan leo rutrum porta. Vestibulum quis tempor tellus. Sed nibh metus, volutpat nec justo tincidunt, pretium ornare quam.",
     ],
@@ -26,9 +29,11 @@ const excursions = [
     alt: "the Dolomites in the sunshine",
     cost: 70,
     duration: "Full day",
+    button_link: "/experiences/coach-excursions/dolomites",
   },
   {
     title: "Dolomites Tour (from north Lake Garda)",
+    id: "DOL-N",
     description: [
       "Proin tristique sed augue quis sagittis. Proin pretium lectus id tellus aliquam bibendum. Nullam vitae libero at sem facilisis rutrum ut ut lectus. Sed sit amet orci sed libero tempus tincidunt ut scelerisque elit. Cras ut neque id erat aliquet iaculis. Proin a quam varius, accumsan est eget, pharetra leo. Mauris consequat condimentum mi, vel accumsan leo rutrum porta. Vestibulum quis tempor tellus. Sed nibh metus, volutpat nec justo tincidunt, pretium ornare quam.",
     ],
@@ -36,9 +41,11 @@ const excursions = [
     alt: "the Dolomites in the sunshine",
     cost: 60,
     duration: "Full day",
+    button_link: "/experiences/coach-excursions/dolomites",
   },
   {
     title: "Verona Opera",
+    id: "OPERA",
     description: [
       "Proin tristique sed augue quis sagittis. Proin pretium lectus id tellus aliquam bibendum. Nullam vitae libero at sem facilisis rutrum ut ut lectus. Sed sit amet orci sed libero tempus tincidunt ut scelerisque elit. Cras ut neque id erat aliquet iaculis. Proin a quam varius, accumsan est eget, pharetra leo. Mauris consequat condimentum mi, vel accumsan leo rutrum porta. Vestibulum quis tempor tellus. Sed nibh metus, volutpat nec justo tincidunt, pretium ornare quam.",
     ],
@@ -46,9 +53,11 @@ const excursions = [
     alt: "people inside the Verona Arena at night waiting for the opera to begin",
     cost: 60,
     duration: "Half day",
+    button_link: "/experiences/coach-excursions/dolomites",
   },
   {
     title: "Boat Trip",
+    id: "BOAT",
     description: [
       "Proin tristique sed augue quis sagittis. Proin pretium lectus id tellus aliquam bibendum. Nullam vitae libero at sem facilisis rutrum ut ut lectus. Sed sit amet orci sed libero tempus tincidunt ut scelerisque elit. Cras ut neque id erat aliquet iaculis. Proin a quam varius, accumsan est eget, pharetra leo. Mauris consequat condimentum mi, vel accumsan leo rutrum porta. Vestibulum quis tempor tellus. Sed nibh metus, volutpat nec justo tincidunt, pretium ornare quam.",
     ],
@@ -56,6 +65,7 @@ const excursions = [
     imgSrc: Boat,
     cost: 0,
     duration: "Half day",
+    button_link: "/experiences/coach-excursions/dolomites",
   },
 ];
 
@@ -63,7 +73,7 @@ function ExcursionList() {
   return (
     <div className={classes.list_container}>
       {excursions.map((excursion) => (
-        <ExcursionSummary excursion={excursion} />
+        <ExcursionSummary excursion={excursion} key={excursion.id} />
       ))}
     </div>
   );

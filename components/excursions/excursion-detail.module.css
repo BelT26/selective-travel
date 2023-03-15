@@ -1,0 +1,82 @@
+.p {
+  text-align: justify;
+}
+
+.time_container {
+  font-size: larger;
+}
+
+.excursion_heading {
+  text-align: center;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 3rem;
+  padding-top: 20px;
+}
+
+.excursion_subheading {
+  color: rgb(223, 182, 79);
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.image_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.large_image_container {
+  margin-bottom: 20px;
+}
+
+.small_img {
+  height: 90px;
+  width: 135px;
+}
+
+.included,
+.excluded,
+.highlights,
+.tips {
+  list-style-type: none;
+}
+
+.small_print_text {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.coach_feature,
+.tip {
+  display: inline-block;
+  padding-right: 80px;
+  margin: 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.small_print_divider {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .image_col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .small_img_container {
+    display: inline-block;
+    width: 150px;
+    height: 90px;
+  }
+
+  .form_container {
+    margin-top: 40px;
+  }
+}

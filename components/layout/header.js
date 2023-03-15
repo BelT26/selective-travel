@@ -6,12 +6,15 @@ import CustomNavLink from "../ui/custom-nav-link";
 import classes from "./header.module.css";
 import dropdownItems from "./dropdown_items";
 import NavDropdowns from "./nav-dropdowns";
+import { FaConciergeBell } from "react-icons/fa";
 
 function Header() {
   return (
     <Navbar style={{ backgroundColor: "black" }} expand="lg" variant="dark">
       <Container fluid className={classes.navbar_container}>
-        <Navbar.Brand href="/">TOP CONCIERGE</Navbar.Brand>
+        <Navbar.Brand href="/">
+          TOP CONCIERGE <FaConciergeBell />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

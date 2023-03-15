@@ -27,24 +27,24 @@ const dropdownItems = [
     dropdowns: [
       { title: "All Experiences", slug2: "/" },
       {
-        title: "Venice",
-        slug2: "/venice",
+        title: "Coach Excursions",
+        slug2: "/coach-excursions",
       },
       {
-        title: "Lake Tour",
-        slug2: "/lake-tour",
+        title: "Boat Trips",
+        slug2: "/boat-trips",
       },
       {
-        title: "Dolomites",
-        slug2: "/dolomites",
+        title: "Food and Wine",
+        slug2: "/food-wine",
       },
       {
         title: "Verona Opera",
         slug2: "/verona-opera",
       },
       {
-        title: "Boat Trip",
-        slug2: "/boat-trip",
+        title: "Sports and Wellness",
+        slug2: "/sport-wellness",
       },
     ],
   },

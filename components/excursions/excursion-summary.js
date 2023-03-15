@@ -39,7 +39,10 @@ function ExcursionSummary({ excursion }) {
                 <small>from</small> <b>&euro; {excursion.cost}</b>
               </p>
               <div className={classes.button_container}>
-                <AnimatedButton link="/" className={classes.button}>
+                <AnimatedButton
+                  link={excursion.button_link}
+                  className={classes.button}
+                >
                   <h6>BOOK NOW</h6>
                 </AnimatedButton>
               </div>
