@@ -1,23 +1,6 @@
-.image_container {
-  padding: 0;
-  width: 100vw;
-  height: 60vh;
-  margin-bottom: 100px;
-}
-
-.carousel_slide {
-  padding-right: var(--bs-gutter-x, 2rem);
-}
-
-.hero_img {
-  object-fit: cover;
-  overflow: hidden;
-  width: 100vw;
-}
-
 .inner_form_container {
   margin-top: 30px;
-  background-color: rgb(81, 81, 83);
+
   color: white;
   padding: 20px;
   border-radius: 10px;
@@ -26,4 +9,7 @@
 .transfers_heading {
   text-align: center;
   margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 3rem;
 }

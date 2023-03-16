@@ -43,7 +43,7 @@ function ExcursionSummary({ excursion }) {
                   link={excursion.button_link}
                   className={classes.button}
                 >
-                  <h6>BOOK NOW</h6>
+                  <h6>MORE DETAILS</h6>
                 </AnimatedButton>
               </div>
             </Col>

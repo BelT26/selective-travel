@@ -1,11 +1,11 @@
-import classes from "./excursion-summary.module.css";
+import classes from "./boat-trip-summary.module.css";
 import Image from "next/image";
 import AnimatedButton from "../ui/animated-button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function ExcursionSummary({ excursion }) {
+function BoatTripSummary({ excursion }) {
   return (
     <Container>
       <hr className={classes.excursion_divider} />
@@ -43,7 +43,7 @@ function ExcursionSummary({ excursion }) {
                   link={excursion.button_link}
                   className={classes.button}
                 >
-                  <h6>BOOK NOW</h6>
+                  <h6>MORE DETAILS</h6>
                 </AnimatedButton>
               </div>
             </Col>
@@ -54,4 +54,4 @@ function ExcursionSummary({ excursion }) {
   );
 }
 
-export default ExcursionSummary;
+export default BoatTripSummary;

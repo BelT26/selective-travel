@@ -122,7 +122,7 @@ function ContactForm() {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} lg={7} className={classes.variable_column}>
+            <Col xs={12} lg={8} className={classes.variable_column}>
               <Form.Group
                 className="mb-3"
                 controlId="subject"
@@ -139,7 +139,7 @@ function ContactForm() {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} lg={10} className={classes.variable_column}>
+            <Col xs={12} lg={8} className={classes.variable_column}>
               <Form.Group
                 className="mb-3"
                 controlId="message"
@@ -150,7 +150,7 @@ function ContactForm() {
                 <Form.Control
                   type="textarea"
                   rows={5}
-                  style={{ height: 200 }}
+                  style={{ height: 100 }}
                 />
               </Form.Group>
             </Col>

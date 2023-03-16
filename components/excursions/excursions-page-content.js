@@ -15,7 +15,7 @@ function ExcursionsPageContent() {
       />
       <Row>
         <Col className={classes.heading_col}>
-          <h1 className={classes.excursions_heading}>Experiences</h1>
+          <h1 className={classes.excursions_heading}>Days Out By Coach</h1>
         </Col>
       </Row>
       <Container>

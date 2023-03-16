@@ -11,3 +11,10 @@
 p {
   text-align: justify;
 }
+
+.custom_heading {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 3rem;
+}

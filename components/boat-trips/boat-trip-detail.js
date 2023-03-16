@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import classes from "./excursion-detail.module.css";
+import classes from "./boat-trip-detail.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,7 +9,7 @@ import { RxCheck, RxCross2 } from "react-icons/rx";
 import { TiChevronRightOutline } from "react-icons/ti";
 import ExcursionForm from "../booking-fom/excursion-form";
 
-function ExcursionDetail({ excursion }) {
+function BoatTripDetail({ excursion }) {
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
   const [selectedImageAlt, setSelectedImageAlt] = useState("");
   let smallerImages = excursion.images.filter(
@@ -165,4 +165,4 @@ function ExcursionDetail({ excursion }) {
   );
 }
 
-export default ExcursionDetail;
+export default BoatTripDetail;

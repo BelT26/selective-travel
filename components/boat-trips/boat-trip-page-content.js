@@ -1,21 +1,21 @@
 import StaticHeroImage from "../ui/static-hero-image";
-import Dolomites4 from "../../public/images/dolomites4.jpg";
-import classes from "./excursions-page-content.module.css";
+import Boat2 from "../../public/images/boat2.jpg";
+import classes from "./boat-trip-page-content.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import ExcursionList from "./excursion-list";
+import BoatTripList from "./boat-trip-list";
 
 function ExcursionsPageContent() {
   return (
     <>
       <StaticHeroImage
-        imgSrc={Dolomites4}
-        alt="the dolomite mountains in the summer"
+        imgSrc={Boat2}
+        alt="a ferry boat on the north of Lake Garda"
       />
       <Row>
         <Col className={classes.heading_col}>
-          <h1 className={classes.excursions_heading}>Experiences</h1>
+          <h1 className={classes.excursions_heading}>Boat Trips</h1>
         </Col>
       </Row>
       <Container>
@@ -30,7 +30,7 @@ function ExcursionsPageContent() {
           scelerisque.
         </p>
       </Container>
-      <ExcursionList />
+      <BoatTripList />
     </>
   );
 }
