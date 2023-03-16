@@ -14,7 +14,10 @@ function AnimatedButton(props) {
         </defs>
       </svg>
 
-      <div className={classes.animated_button_container}>
+      <div
+        className={classes.animated_button_container}
+        onClick={props.onClick}
+      >
         <div className={classes.animated_button_content}>
           <Link
             href={props.link}

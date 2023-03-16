@@ -6,15 +6,13 @@
   font-size: 3rem;
 }
 
-.image_container {
-  padding: 0;
-  width: 100vw;
-  height: 60vh;
-  margin-bottom: 100px;
+.address_container {
+  margin-top: 100px;
 }
 
-.hero_img {
-  object-fit: cover;
-  overflow: hidden;
-  width: 100vw;
+@media screen and (max-width: 768px) {
+  .address_container {
+    margin-top: 0px;
+    padding-left: 60px;
+  }
 }

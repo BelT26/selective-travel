@@ -25,28 +25,23 @@ function ContactForm() {
 
   // Validation check method
   const handleValidation = () => {
-    let tempErrors = {};
     let isValid = true;
-
-    if (fullname.length <= 0) {
-      tempErrors["fullname"] = true;
+    let errorMessage = "";
+    if (!fullname || fullname.trim() === "") {
       isValid = false;
+      errorMessage = "Please enter a valid name";
     }
-    if (email.length <= 0) {
-      tempErrors["email"] = true;
+    if (!email || email.trim() === "" || !email.includes("@")) {
       isValid = false;
+      errorMessage = "Please enter a valid email";
     }
-    if (subject.length <= 0) {
-      tempErrors["subject"] = true;
+    if (!message || message.trim() === "") {
       isValid = false;
+      errorMessage = "Please enter a message";
     }
-    if (message.length <= 0) {
-      tempErrors["message"] = true;
-      isValid = false;
+    if (errorMessage) {
+      alert(errorMessage);
     }
-
-    setErrors({ ...tempErrors });
-    console.log("errors", errors);
     return isValid;
   };
 
@@ -56,39 +51,42 @@ function ContactForm() {
     e.preventDefault();
 
     let isValidForm = handleValidation();
-
     if (isValidForm) {
-      setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
-        method: "POST",
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
-
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText("Send");
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setFullname("");
-      setEmail("");
-      setSubject("accommodation");
-      setMessage("");
-      setButtonText("Send");
+      alert("OK!");
     }
+
+    // if (isValidForm) {
+    //   setButtonText("Sending");
+    //   const res = await fetch("/api/sendgrid", {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //       email: email,
+    //       fullname: fullname,
+    //       subject: subject,
+    //       message: message,
+    //     }),
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     method: "POST",
+    //   });
+
+    //   const { error } = await res.json();
+    //   if (error) {
+    //     console.log(error);
+    //     setShowSuccessMessage(false);
+    //     setShowFailureMessage(true);
+    //     setButtonText("Send");
+    //     return;
+    //   }
+    //   setShowSuccessMessage(true);
+    //   setShowFailureMessage(false);
+    //   setFullname("");
+    //   setEmail("");
+    //   setSubject("accommodation");
+    //   setMessage("");
+    //   setButtonText("Send");
+    // }
     console.log(fullname, email, subject, message);
   };
   return (
@@ -148,15 +146,15 @@ function ContactForm() {
               >
                 <Form.Label>Message</Form.Label>
                 <Form.Control
-                  type="textarea"
-                  rows={5}
-                  style={{ height: 100 }}
+                  as="textarea"
+                  rows={3}
+                  style={{ height: "100px" }}
                 />
               </Form.Group>
             </Col>
           </Row>
 
-          <AnimatedButton onClick={handleSubmit} link="/">
+          <AnimatedButton onClick={handleSubmit} link="/contact">
             Send
           </AnimatedButton>
         </Form>
