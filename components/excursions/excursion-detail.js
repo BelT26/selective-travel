@@ -12,9 +12,7 @@ import ExcursionForm from "../booking-fom/excursion-form";
 function ExcursionDetail({ excursion }) {
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
   const [selectedImageAlt, setSelectedImageAlt] = useState("");
-  let smallerImages = excursion.images.filter(
-    (image) => image.imgSrc.src !== selectedImageSrc
-  );
+  let smallerImages = excursion.images;
 
   useEffect(() => {
     setSelectedImageSrc(excursion.images[0].imgSrc.src);
@@ -25,9 +23,6 @@ function ExcursionDetail({ excursion }) {
     console.log(e.target);
     setSelectedImageSrc(e.target.src);
     setSelectedImageAlt(e.target.alt);
-    smallerImages = excursion.images.filter(
-      (image) => image.imgSrc.src !== e.target.src
-    );
   };
   return (
     <Container>
@@ -45,6 +40,7 @@ function ExcursionDetail({ excursion }) {
               <Col xs={12} lg={9}>
                 <div className={classes.large_image_container}>
                   <Image
+                    className={classes.large_image}
                     src={selectedImageSrc}
                     height={400}
                     width={600}

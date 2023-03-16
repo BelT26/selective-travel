@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import classes from "./excursion-detail.module.css";
+import classes from "./opera-detail.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -45,6 +45,7 @@ function OperaDetail({ excursion }) {
               <Col xs={12} lg={9}>
                 <div className={classes.large_image_container}>
                   <Image
+                    className={classes.large_image}
                     src={selectedImageSrc}
                     height={400}
                     width={600}
@@ -83,50 +84,37 @@ function OperaDetail({ excursion }) {
             <p>{paragraph}</p>
           ))}
         </div>
-        {excursion.highlights && (
-          <div>
-            <h3 className={classes.excursion_subheading}>Highlights</h3>
-            <ul className={classes.highlights}>
-              {excursion.highlights.map((highlight) => (
-                <li>
-                  <TiChevronRightOutline /> {highlight}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-        {excursion.coachFeatures && (
-          <div>
-            <h3 className={classes.excursion_subheading}>
-              Your Coach or Minibus
-            </h3>
-            <ul className={classes.coach_features}>
-              {excursion.coachFeatures.map((feature) => (
-                <li className={classes.coach_feature}>
-                  <RxCheck /> {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {excursion.included && (
-          <Row>
-            <Col xs={12} lg={6}>
+        <Row>
+          {excursion.highlights && (
+            <Col xs={12} lg={4}>
+              <h3 className={classes.excursion_subheading}>Highlights</h3>
+              <ul className={classes.highlights}>
+                {excursion.highlights.map((highlight, index) => (
+                  <li key={index}>
+                    <TiChevronRightOutline /> {highlight}
+                  </li>
+                ))}
+              </ul>
+            </Col>
+          )}
+          {excursion.included && (
+            <Col xs={12} lg={4}>
               <h3 className={classes.excursion_subheading}>Included</h3>
               <ul className={classes.included}>
-                {excursion.included.map((item) => (
-                  <li className={classes.included_item}>
+                {excursion.included.map((item, index) => (
+                  <li className={classes.included_item} key={index}>
                     <RxCheck /> {item}
                   </li>
                 ))}
               </ul>
             </Col>
-            <Col xs={12} lg={6}>
+          )}
+          {excursion.excluded && (
+            <Col xs={12} lg={4}>
               <h3 className={classes.excursion_subheading}>Not Included</h3>
               <ul className={classes.excluded}>
-                {excursion.excluded.map((item) => (
-                  <li className={classes.excluded_item}>
+                {excursion.excluded.map((item, index) => (
+                  <li className={classes.excluded_item} key={index}>
                     <RxCross2 />
                     {"    "}
                     {item}
@@ -134,20 +122,38 @@ function OperaDetail({ excursion }) {
                 ))}
               </ul>
             </Col>
-          </Row>
-        )}
-        {excursion.tips && (
-          <div>
-            <h3 className={classes.excursion_subheading}>Top Concierge Tips</h3>
-            <ul className={classes.tips}>
-              {excursion.tips.map((tip) => (
-                <li className={classes.tip}>
-                  <RxCheck /> {tip}
-                </li>
-              ))}
-            </ul>{" "}
-          </div>
-        )}
+          )}
+        </Row>
+        <Row>
+          {excursion.coachFeatures && (
+            <Col xs={12} lg={4}>
+              <h3 className={classes.excursion_subheading}>
+                Your Coach or Minibus
+              </h3>
+              <ul className={classes.coach_features}>
+                {excursion.coachFeatures.map((feature, index) => (
+                  <li className={classes.coach_feature} key={index}>
+                    <RxCheck /> {feature}
+                  </li>
+                ))}
+              </ul>
+            </Col>
+          )}
+          {excursion.tips && (
+            <Col xs={12} lg={8}>
+              <h3 className={classes.excursion_subheading}>
+                Top Concierge Tips
+              </h3>
+              <ul className={classes.tips}>
+                {excursion.tips.map((tip, index) => (
+                  <li className={classes.tip} key={index}>
+                    <RxCheck /> {tip}
+                  </li>
+                ))}
+              </ul>{" "}
+            </Col>
+          )}
+        </Row>
       </div>
       <hr className={classes.small_print_divider} />
       <h6 className={classes.small_print_heading}>The small print</h6>

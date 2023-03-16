@@ -74,9 +74,19 @@
     display: inline-block;
     width: 150px;
     height: 90px;
+    margin-bottom: 20px;
   }
 
   .form_container {
     margin-top: 40px;
+  }
+
+  .large_image_container {
+    width: 90vw;
+  }
+
+  .large_image {
+    width: 90vw;
+    object-fit: cover;
   }
 }

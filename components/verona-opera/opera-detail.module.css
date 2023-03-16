@@ -39,20 +39,14 @@
 .included,
 .excluded,
 .highlights,
-.tips {
+.tips,
+.coach_features {
   list-style-type: none;
 }
 
 .small_print_text {
   font-size: 0.8rem;
   text-align: justify;
-}
-
-.coach_feature,
-.tip {
-  display: inline-block;
-  padding-right: 80px;
-  margin: 0;
 }
 
 .underline {
@@ -78,5 +72,14 @@
 
   .form_container {
     margin-top: 40px;
+  }
+
+  .large_image_container {
+    width: 90vw;
+  }
+
+  .large_image {
+    width: 90vw;
+    object-fit: cover;
   }
 }

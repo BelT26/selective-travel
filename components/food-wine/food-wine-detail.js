@@ -45,6 +45,7 @@ function ExcursionDetail({ excursion }) {
               <Col xs={12} lg={9}>
                 <div className={classes.large_image_container}>
                   <Image
+                    className={classes.large_image}
                     src={selectedImageSrc}
                     height={400}
                     width={600}
