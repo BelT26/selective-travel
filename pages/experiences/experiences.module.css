@@ -1,0 +1,17 @@
+.experiences_grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.experiences_heading {
+  margin: 40px auto 0px;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 3rem;
+}
+
+.heading_col {
+  text-align: center;
+}

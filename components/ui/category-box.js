@@ -4,7 +4,10 @@ import classes from "./category-box.module.css";
 
 function CategoryBox(props) {
   return (
-    <div className={classes.box}>
+    <div
+      className={classes.box}
+      style={{ width: props.width, height: props.height }}
+    >
       <Link
         href={props.href}
         style={{ textDecoration: "none", color: "whitesmoke" }}
@@ -12,8 +15,8 @@ function CategoryBox(props) {
         <Image
           src={props.imgSrc}
           alt={props.alt}
-          height={260}
-          width={240}
+          height={props.height}
+          width={props.width}
           className={classes.category_img}
         />
         <h3 className={classes.box_title}>{props.title}</h3>

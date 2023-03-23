@@ -18,3 +18,7 @@ p {
   color: rgb(223, 182, 79);
   font-size: 3rem;
 }
+
+.heading_col {
+  text-align: center;
+}

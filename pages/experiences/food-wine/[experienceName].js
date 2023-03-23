@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
-import FoodWineDetail from "@/components/food-wine/food-wine-detail";
-import Valpolicella from "@/public/images/valpolicella.jpg";
-import WineCellar from "@/public/images/wine-cellar.jpg";
-import WineFood from "@/public/images/wine-cheese.jpg";
-import Vines from "@/public/images/vines.jpg";
-import Vineyard from "@/public/images/vineyard.jpg";
+import FoodWineDetail from "../../../components/food-wine/food-wine-detail";
+import Valpolicella from "../../../public/images/valpolicella.jpg";
+import WineCellar from "../../../public/images/wine-cellar.jpg";
+import WineFood from "../../../public/images/wine-cheese.jpg";
+import Vines from "../../../public/images/vines.jpg";
+import Vineyard from "../../../public/images/vineyard.jpg";
 
 const excursions = [
   {

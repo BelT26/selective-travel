@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import dropdownItems from "@/components/layout/dropdown_items";
+import dropdownItems from "../../components/layout/dropdown_items";
 
 function ThemeParkDetail() {
   const router = useRouter();

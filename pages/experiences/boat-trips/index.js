@@ -1,6 +1,6 @@
 import Head from "next/head";
-import BoatTripContent from "@/components/boat-trips/boat-trip-page-content";
-import styles from "@/styles/Home.module.css";
+import BoatTripContent from "../../../components/boat-trips/boat-trip-page-content";
+import styles from "../../../styles/Home.module.css";
 
 function BoatTrips() {
   return (

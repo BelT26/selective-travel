@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import ExcursionDetail from "@/components/excursions/excursion-detail";
+import ExcursionDetail from "../../components/excursions/excursion-detail";
 import Venice1 from "../../public/images/venice.jpg";
 import Venice2 from "../../public/images/venice2.jpg";
 import Venice3 from "../../public/images/venice3.jpg";
@@ -70,12 +70,12 @@ const excursions = [
 function Experience() {
   const router = useRouter();
   const experienceName = router.query.experienceName;
-  console.log("experience name is " + experienceName);
+  // console.log("experience name is " + experienceName);
   let selectedExperience = excursions[0];
 
   for (let i = 0; i < excursions.length; i++) {
-    console.log(excursions[i].slug);
-    console.log("/" + experienceName);
+    // console.log(excursions[i].slug);
+    // console.log("/" + experienceName);
     if (excursions[i].slug === "/" + experienceName) {
       selectedExperience = excursions[i];
       console.log(selectedExperience.images);

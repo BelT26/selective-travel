@@ -1,11 +1,11 @@
 import FoodWineSummary from "./food-wine-summary";
 import classes from "./food-wine-list.module.css";
-import Valpolicella from "@/public/images/valpolicella.jpg";
-import WineLake from "@/public/images/wine-lake.jpg";
-import WineCellar from "@/public/images/wine-cellar.jpg";
-import WineFood from "@/public/images/wine-food.jpg";
-import Vines from "@/public/images/vines.jpg";
-import Vineyard from "@/public/images/vineyard.jpg";
+import Valpolicella from "../../public/images/valpolicella.jpg";
+import WineLake from "../../public/images/wine-lake.jpg";
+import WineCellar from "../../public/images/wine-cellar.jpg";
+import WineFood from "../../public/images/wine-food.jpg";
+import Vines from "../../public/images/vines.jpg";
+import Vineyard from "../../public/images/vineyard.jpg";
 
 const excursions = [
   {

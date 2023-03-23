@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-import Boat1 from "@/public/images/boat_trip.jpg";
-import Limone1 from "@/public/images/limone.jpg";
-import Limone2 from "@/public/images/limone2.jpg";
-import Sirmione from "@/public/images/sirmione.jpg";
-import SanVigilio from "@/public/images/lake5.jpg";
-import Boat3 from "@/public/images/boat3.jpg";
-import Sirmione2 from "@/public/images/lake4.jpg";
-import BoatTripDetail from "@/components/boat-trips/boat-trip-detail";
+import Boat1 from "../../../public/images/boat_trip.jpg";
+import Limone1 from "../../../public/images/limone.jpg";
+import Limone2 from "../../../public/images/limone2.jpg";
+import Sirmione from "../../../public/images/sirmione.jpg";
+import SanVigilio from "../../../public/images/lake5.jpg";
+import Boat3 from "../../../public/images/boat3.jpg";
+import Sirmione2 from "../../../public/images/lake4.jpg";
+import BoatTripDetail from "../../../components/boat-trips/boat-trip-detail";
 
 const excursions = [
   {

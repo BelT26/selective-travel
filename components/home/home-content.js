@@ -7,6 +7,37 @@ import classes from "./home-content.module.css";
 import CategoryGrid from "./category-grid";
 import ContactLink from "../ui/contact_link";
 import { FaConciergeBell } from "react-icons/fa";
+import Venice from "../../public/images/venice.jpg";
+import Coach from "../../public/images/gold_coach.jpg";
+import GardaLand from "../../public/images/gardaland.jpg";
+import Arena from "../../public/images/arena.jpg";
+
+const categories = [
+  {
+    title: "Experiences",
+    imgSrc: Venice,
+    href: "/experiences",
+    alt: "venice",
+  },
+  {
+    title: "Transport",
+    imgSrc: Coach,
+    href: "/transport",
+    alt: "gold coloured coach",
+  },
+  {
+    title: "Theme Parks",
+    imgSrc: GardaLand,
+    href: "/theme-parks",
+    alt: "rollercoaster against a blue sky",
+  },
+  {
+    title: "Verona Opera",
+    imgSrc: Arena,
+    href: "/experiences/verona-opera",
+    alt: "the verona arena at night",
+  },
+];
 
 function HomePageContent() {
   return (
@@ -93,7 +124,7 @@ function HomePageContent() {
           <h2 className={classes.subheading}>Recommended by your Concierge </h2>
         </Col>
       </Row>
-      <CategoryGrid />
+      <CategoryGrid categories={categories} box_height={260} box_width={240} />
       {/* <Row>
         <Col className={classes.subheading_col}>
           <h2 className={classes.subheading}>Concierge services </h2>

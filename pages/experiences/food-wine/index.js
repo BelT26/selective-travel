@@ -1,6 +1,6 @@
 import Head from "next/head";
-import FoodWineContent from "@/components/food-wine/food-wine-page-content";
-import styles from "@/styles/Home.module.css";
+import FoodWineContent from "../../../components/food-wine/food-wine-page-content";
+import styles from "../../../styles/Home.module.css";
 
 function FoodWine() {
   return (

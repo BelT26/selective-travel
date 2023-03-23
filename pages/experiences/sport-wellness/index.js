@@ -1,6 +1,6 @@
 import Head from "next/head";
-import SportsPageContent from "@/components/sports-wellness/sports-page-content";
-import styles from "@/styles/Home.module.css";
+import SportsPageContent from "../../../components/sports-wellness/sports-page-content";
+import styles from "../../../styles/Home.module.css";
 
 function SportWellness() {
   return (

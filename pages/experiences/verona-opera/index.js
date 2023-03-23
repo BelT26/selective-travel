@@ -1,6 +1,6 @@
 import Head from "next/head";
-import OperaPageContent from "@/components/verona-opera/opera-page-content";
-import styles from "@/styles/Home.module.css";
+import OperaPageContent from "../../../components/verona-opera/opera-page-content";
+import styles from "../../../styles/Home.module.css";
 
 function VeronaOpera() {
   return (

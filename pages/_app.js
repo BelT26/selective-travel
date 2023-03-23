@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-submenu/dist/index.css";
 import { SSRProvider } from "react-bootstrap";
-import "@/styles/globals.css";
+import "../styles/globals.css";
 
-import Layout from "@/components/layout/layout";
+import Layout from "../components/layout/layout";
 
 export default function App({ Component, pageProps }) {
   return (

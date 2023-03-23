@@ -10,6 +10,20 @@
   margin-top: 100px;
 }
 
+.phone_icon {
+  font-size: 22px;
+}
+
+.phone_link {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-bottom: 16px;
+}
+
+.phone_link:hover {
+  color: rgb(147, 172, 223);
+}
+
 @media screen and (max-width: 768px) {
   .address_container {
     margin-top: 0px;

@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Trip {
+  id      Int  @id @default(autoincrement())
+  title   String
+  description String[]
+  images  String[]
+  price   Int
+  days    String[]
+  duration  String
+  hours     String
+  highlights String[]
+  included  String[]
+  excluded  String[]
+  coach_features String[]
+  tips String[]
+  slug      String @unique
+  category_id Int
+  category  ExperienceCategory @relation(fields: [category_id], references: [id])
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model ExperienceCategory {
+  id      Int  @id @default(autoincrement())
+  title  String
+  image String
+  description String[]
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  trips Trip[]
+}

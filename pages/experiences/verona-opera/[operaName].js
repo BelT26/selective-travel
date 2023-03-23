@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
-import OperaDetail from "@/components/verona-opera/opera-detail";
-import Opera from "@/public/images/opera.jpg";
-import Venice2 from "@/public/images/venice2.jpg";
-import Venice5 from "@/public/images/venice5.jpg";
-import Venice4 from "@/public/images/venice4.jpg";
+import OperaDetail from "../../../components/verona-opera/opera-detail";
+import Opera from "../../../public/images/opera.jpg";
+import Venice2 from "../../../public/images/venice2.jpg";
+import Venice5 from "../../../public/images/venice5.jpg";
+import Venice4 from "../../../public/images/venice4.jpg";
 
 const excursions = [
   {

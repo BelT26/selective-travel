@@ -2,12 +2,12 @@ import Image from "next/image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import TransferBus from "@/public/images/transfer.jpg";
+import TransferBus from "../../public/images/transfer.jpg";
 import GoldCoach from "../../public/images/gold_coach.jpg";
 import classes from "./transfers.module.css";
-import TransferGrid from "@/components/transfers/transfer-grid";
-import TransferForm from "@/components/booking-fom/transfer-form";
-import StaticHeroImage from "@/components/ui/static-hero-image";
+import TransferGrid from "../../components/transfers/transfer-grid";
+import TransferForm from "../../components/booking-fom/transfer-form";
+import StaticHeroImage from "../../components/ui/static-hero-image";
 
 function Transfers() {
   return (

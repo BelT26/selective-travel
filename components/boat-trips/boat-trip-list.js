@@ -1,7 +1,7 @@
 import BoatTripSummary from "./boat-trip-summary";
 import classes from "./boat-trip-list.module.css";
 import Boat from "../../public/images/boat_trip.jpg";
-import SanVig from "@/public/images/lake5.jpg";
+import SanVig from "../../public/images/lake5.jpg";
 
 const excursions = [
   {

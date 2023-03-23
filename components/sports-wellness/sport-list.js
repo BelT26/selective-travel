@@ -1,7 +1,7 @@
 import SportSummary from "./sport-summary";
 import classes from "./sport-list.module.css";
-import Bicycle from "@/public/images/bicycle1.jpg";
-import Pool from "@/public/images/water.jpg";
+import Bicycle from "../../public/images/bicycle1.jpg";
+import Pool from "../../public/images/water.jpg";
 
 const excursions = [
   {

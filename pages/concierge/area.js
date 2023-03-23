@@ -1,6 +1,6 @@
 import classes from "./concierge.module.css";
-import StaticHeroImage from "@/components/ui/static-hero-image";
-import LocalArea from "@/public/images/local-area2.jpg";
+import StaticHeroImage from "../../components/ui/static-hero-image";
+import LocalArea from "../../public/images/local-area2.jpg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 

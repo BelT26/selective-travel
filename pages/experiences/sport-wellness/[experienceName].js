@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import SportDetail from "@/components/sports-wellness/sport-detail";
-import Bicycle1 from "@/public/images/bicycle1.jpg";
-import Bicycle2 from "@/public/images/bicycle1.jpg";
+import SportDetail from "../..components/sports-wellness/sport-detail";
+import Bicycle1 from "../..public/images/bicycle1.jpg";
+import Bicycle2 from "../..public/images/bicycle1.jpg";
 
 const excursions = [
   {

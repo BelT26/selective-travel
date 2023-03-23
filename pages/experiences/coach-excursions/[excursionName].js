@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
-import ExcursionDetail from "@/components/excursions/excursion-detail";
-import Venice1 from "@/public/images/venice.jpg";
-import Venice2 from "@/public/images/venice2.jpg";
-import Venice3 from "@/public/images/venice3.jpg";
-import Venice4 from "@/public/images/venice4.jpg";
-import Venice5 from "@/public/images/venice5.jpg";
-import Dolomites1 from "@/public/images/dolomites1.jpg";
-import Dolomites3 from "@/public/images/dolomites3.jpg";
-import Dolomites2 from "@/public/images/dolomites2.jpg";
+import ExcursionDetail from "../../../components/excursions/excursion-detail";
+import Venice1 from "../../../public/images/venice.jpg";
+import Venice2 from "../../../public/images/venice2.jpg";
+import Venice3 from "../../../public/images/venice3.jpg";
+import Venice4 from "../../../public/images/venice4.jpg";
+import Venice5 from "../../../public/images/venice5.jpg";
+import Dolomites1 from "../../../public/images/dolomites1.jpg";
+import Dolomites3 from "../../../public/images/dolomites3.jpg";
+import Dolomites2 from "../../../public/images/dolomites2.jpg";
 
 const excursions = [
   {

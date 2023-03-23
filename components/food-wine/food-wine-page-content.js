@@ -1,5 +1,5 @@
 import StaticHeroImage from "../ui/static-hero-image";
-import WineLake from "@/public/images/wine-lake.jpg";
+import WineLake from "../../public/images/wine-lake.jpg";
 import classes from "./food-wine-page-content.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

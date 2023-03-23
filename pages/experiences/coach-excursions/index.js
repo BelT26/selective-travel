@@ -1,6 +1,6 @@
 import Head from "next/head";
-import ExcursionsPageContent from "@/components/excursions/excursions-page-content";
-import styles from "@/styles/Home.module.css";
+import ExcursionsPageContent from "../../../components/excursions/excursions-page-content";
+import styles from "../../../styles/Home.module.css";
 
 function Excursions() {
   return (

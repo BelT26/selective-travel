@@ -1,5 +1,5 @@
-import StaticHeroImage from "@/components/ui/static-hero-image";
-import TipJar from "@/public/images/tips.jpg";
+import StaticHeroImage from "../../components/ui/static-hero-image";
+import TipJar from "../../public/images/tips.jpg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import classes from "./concierge.module.css";

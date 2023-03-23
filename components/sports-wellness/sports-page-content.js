@@ -1,5 +1,5 @@
 import StaticHeroImage from "../ui/static-hero-image";
-import MountainBikes from "@/public/images/mountain-bikes.jpg";
+import MountainBikes from "../../public/images/mountain-bikes.jpg";
 import classes from "./sports-page-content.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

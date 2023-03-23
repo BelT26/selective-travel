@@ -11,3 +11,17 @@
 .social_icon {
   margin: 10px 30px;
 }
+
+.phone_link {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-bottom: 16px;
+}
+
+.phone_link:hover {
+  color: rgb(147, 172, 223);
+}
+
+.phone_icon {
+  font-size: 22px;
+}
