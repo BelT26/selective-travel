@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import classes from "./sport-detail.module.css";
+import classes from "./theme-park-detail.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,12 +9,10 @@ import { RxCheck, RxCross2 } from "react-icons/rx";
 import { TiChevronRightOutline } from "react-icons/ti";
 import ExcursionForm from "../booking-fom/excursion-form";
 
-function SportDetail({ excursion }) {
+function ThemeParkDetail({ excursion }) {
   const [selectedImageSrc, setSelectedImageSrc] = useState("");
   const [selectedImageAlt, setSelectedImageAlt] = useState("");
-  let smallerImages = excursion.images.filter(
-    (image) => image.imgSrc.src !== selectedImageSrc
-  );
+  let smallerImages = excursion.images;
 
   useEffect(() => {
     setSelectedImageSrc(excursion.images[0].imgSrc.src);
@@ -25,9 +23,6 @@ function SportDetail({ excursion }) {
     console.log(e.target);
     setSelectedImageSrc(e.target.src);
     setSelectedImageAlt(e.target.alt);
-    smallerImages = excursion.images.filter(
-      (image) => image.imgSrc.src !== e.target.src
-    );
   };
   return (
     <Container>
@@ -57,7 +52,6 @@ function SportDetail({ excursion }) {
                 <div className={classes.image_col}>
                   {smallerImages.map((image) => (
                     <div
-                      key={image.id}
                       className={classes.small_img_container}
                       onClick={handleImageSelection}
                     >
@@ -67,6 +61,7 @@ function SportDetail({ excursion }) {
                         height={400}
                         width={600}
                         alt={image.alt}
+                        key={image.id}
                       />
                     </div>
                   ))}
@@ -157,13 +152,13 @@ function SportDetail({ excursion }) {
         full refund, you must cancel at least 24 hours before the experience’s
         start time. If you cancel less than 24 hours before the experience’s
         start time, the amount you paid will not be refunded. Any changes made
-        less than 24 hours before the experience’s start time will not be
-        accepted. Please note that no refund will be accepted for no shows or
-        late arrivals. The tour will take place also with rain, in the event of
+        less than 24 hours before the experience’s start time will not be accept
+        Please note that no refund will be accepted for no shows or late
+        arrivals. The tour will take place also with rain, in the event of
         exceptional high tide it might be cancelled and refund will be provided
       </p>
     </Container>
   );
 }
 
-export default SportDetail;
+export default ThemeParkDetail;

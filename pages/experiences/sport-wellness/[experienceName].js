@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
-import SportDetail from "../..components/sports-wellness/sport-detail";
-import Bicycle1 from "../..public/images/bicycle1.jpg";
-import Bicycle2 from "../..public/images/bicycle1.jpg";
+import SportDetail from "../../../components/sports-wellness/sport-detail";
+import Bicycle1 from "../../../public/images/bicycle1.jpg";
+import Bicycle2 from "../../../public/images/bicycle2.jpg";
+import Bicycle3 from "../../../public/images/bicycle3.jpg";
+import Venice5 from "../../../public/images/venice5.jpg";
 
 const excursions = [
   {
@@ -19,10 +21,10 @@ const excursions = [
       {
         imgSrc: Bicycle2,
         alt: "bicycle parked by a mountain lake",
-        id: "CYCLEE2",
+        id: "CYCLE2",
       },
 
-      { imgSrc: Venice4, alt: "venice", id: "VCE4" },
+      { imgSrc: Bicycle3, alt: "cyclists", id: "CYCLE3" },
       { imgSrc: Venice5, alt: "venice", id: "VCE5" },
     ],
     days: ["Every Day"],

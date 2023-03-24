@@ -1,11 +1,11 @@
-import classes from "./sport-summary.module.css";
+import classes from "./theme-park-summary.module.css";
 import Image from "next/image";
 import AnimatedButton from "../ui/animated-button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function SportSummary({ excursion }) {
+function ThemeParkSummary({ excursion }) {
   return (
     <Container>
       <hr className={classes.excursion_divider} />
@@ -54,4 +54,4 @@ function SportSummary({ excursion }) {
   );
 }
 
-export default SportSummary;
+export default ThemeParkSummary;

@@ -46,6 +46,7 @@ const dropdownItems = [
         title: "Sports and Wellness",
         slug2: "/sport-wellness",
       },
+      { title: "Theme Parks", slug2: "/theme-parks" },
     ],
   },
   {
@@ -55,24 +56,6 @@ const dropdownItems = [
       {
         title: "All Transfers",
         slug2: "/",
-      },
-      {
-        title: "Transport",
-        slug2: "/transport",
-      },
-    ],
-  },
-  {
-    main_title: "Theme Parks",
-    slug1: "/theme-parks",
-    dropdowns: [
-      {
-        title: "Gardaland",
-        slug2: "/gardaland",
-      },
-      {
-        title: "Caneva World",
-        slug2: "/caneva-world",
       },
     ],
   },
