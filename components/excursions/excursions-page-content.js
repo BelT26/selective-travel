@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import ExcursionList from "./excursion-list";
+import ExcursionListCopy from "./excursion-list-copy";
 
 function ExcursionsPageContent() {
   return (
@@ -30,7 +31,7 @@ function ExcursionsPageContent() {
           scelerisque.
         </p>
       </Container>
-      <ExcursionList />
+      <ExcursionListCopy />
     </>
   );
 }

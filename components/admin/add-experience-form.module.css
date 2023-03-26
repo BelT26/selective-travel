@@ -1,0 +1,26 @@
+.form_selector {
+  margin: 20px;
+  text-decoration: underline;
+  padding: 5px;
+}
+
+.inner_form_container {
+  margin-top: 30px;
+  background-color: rgb(81, 81, 83);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.active_form {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.booking_form {
+  margin-bottom: 30px;
+}
+
+.submit_button {
+  background-color: rgb(223, 182, 79);
+}

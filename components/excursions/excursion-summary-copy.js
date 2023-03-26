@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function ExcursionSummaryCopy({ excursion }) {
+function ExcursionSummary({ excursion }) {
   return (
     <Container>
       <hr className={classes.excursion_divider} />
@@ -40,7 +40,7 @@ function ExcursionSummaryCopy({ excursion }) {
               </p>
               <div className={classes.button_container}>
                 <AnimatedButton
-                  link={excursion.button_link}
+                  link={excursion.button_link ? excursion.button_link : "/"}
                   className={classes.button}
                 >
                   <h6>MORE DETAILS</h6>
@@ -54,4 +54,4 @@ function ExcursionSummaryCopy({ excursion }) {
   );
 }
 
-export default ExcursionSummaryCopy;
+export default ExcursionSummary;

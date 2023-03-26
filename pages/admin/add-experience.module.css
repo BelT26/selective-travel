@@ -1,0 +1,26 @@
+.form_heading {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 3rem;
+}
+
+.heading_col {
+  text-align: center;
+}
+
+.form_col {
+  padding: 10px 200px;
+}
+
+@media screen and (max-width: 900px) {
+  .form_col {
+    padding: 10px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form_col {
+    padding: 10px;
+  }
+}

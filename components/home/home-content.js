@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "next/image";
 import carouselImages from "./carousel-items";
 import HeroImageCarousel from "../ui/hero-image-carousel";
 import classes from "./home-content.module.css";
@@ -11,6 +12,8 @@ import Venice from "../../public/images/venice.jpg";
 import Coach from "../../public/images/gold_coach.jpg";
 import GardaLand from "../../public/images/gardaland.jpg";
 import Arena from "../../public/images/arena.jpg";
+import Home2 from "../../public/images/home2.JPG";
+import Boats from "../../public/images/home_boats.JPG";
 
 const categories = [
   {
@@ -44,8 +47,8 @@ function HomePageContent() {
     <>
       <HeroImageCarousel images={carouselImages} />
       <Container>
-        <Row>
-          <Col xs={12} lg={5}>
+        <Row className={classes.intro_row}>
+          <Col xs={12} lg={6} className={classes.intro_text_col}>
             <h1 className={classes.heading}>
               Welcome to Italy and Lake Garda!
             </h1>
@@ -60,7 +63,15 @@ function HomePageContent() {
             </p>
             <p>We would be delighted to be your point of reference! </p>
           </Col>
-          <Col xs={12} lg={7}></Col>
+          <Col xs={12} lg={6} className={classes.intro_img_col}>
+            <Image
+              className="classes.boats_img"
+              src={Boats}
+              alt="sailing boats moored up alongside a promenade on Lake Garda"
+              height={330}
+              width={550}
+            />
+          </Col>
         </Row>
         <Row>
           <Col className={classes.subheading_col}>
@@ -119,12 +130,21 @@ function HomePageContent() {
           </Col>
         </Row>
       </Container>
-      <Row>
-        <Col className={classes.subheading_col}>
-          <h2 className={classes.subheading}>Recommended by your Concierge </h2>
-        </Col>
-      </Row>
-      <CategoryGrid categories={categories} box_height={260} box_width={240} />
+      <Container>
+        <Row>
+          <Col className={classes.subheading_col}>
+            <h2 className={classes.subheading}>
+              Recommended by your Concierge{" "}
+            </h2>
+          </Col>
+        </Row>
+        <CategoryGrid
+          categories={categories}
+          box_height={260}
+          box_width={240}
+        />
+      </Container>
+
       {/* <Row>
         <Col className={classes.subheading_col}>
           <h2 className={classes.subheading}>Concierge services </h2>
