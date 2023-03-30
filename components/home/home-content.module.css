@@ -13,6 +13,11 @@
 .intro_row {
   margin-top: 50px;
   padding: 10px 30px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.lead {
   font-size: 1.2rem;
 }
 
@@ -27,7 +32,7 @@
 
 .subheading,
 .subheading_top {
-  margin: 20px auto;
+  margin: 20px auto 0;
   font-weight: 300;
   color: rgb(223, 182, 79);
 }
@@ -41,6 +46,8 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
+  margin-top: 20px;
+  font-size: 1.05rem;
 }
 
 .reason_text {
@@ -48,8 +55,15 @@
   padding: 10px 30px;
 }
 
+.bell_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .intro_img_col {
     justify-content: center;
+    margin-top: 20px;
   }
 }

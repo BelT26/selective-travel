@@ -18,6 +18,7 @@ function AddExperienceForm() {
   const [excluded, setExcluded] = useState([]);
   const [tips, setTips] = useState([]);
   const [features, setFeatures] = useState([]);
+  const [isInvalid, setIsInvalid] = useState(false);
 
   function handleIncluded(event) {
     const itemString = event.target.value;
@@ -45,10 +46,17 @@ function AddExperienceForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
     let fullDescription = [];
     fullDescription.push(description1);
     fullDescription.push(description2);
     fullDescription.push(description3);
+
+    if (!title || title.trim() === "" || !slug || slug.trim() === "" || !days) {
+      setIsInvalid(true);
+      alert("You must complete all required fields");
+      return;
+    }
 
     const newExperience = {
       title,
@@ -65,6 +73,15 @@ function AddExperienceForm() {
       features,
     };
     console.log(newExperience);
+    fetch("/api/experiences", {
+      method: "POST",
+      body: JSON.stringify(newExperience),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data));
   }
 
   return (

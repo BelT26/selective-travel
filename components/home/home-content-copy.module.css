@@ -1,0 +1,73 @@
+.main_heading {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.heading {
+  margin: 10px auto 20px;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+  font-size: 2.5rem;
+}
+
+.intro_row {
+  margin-top: 50px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.intro_img_col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boats_img {
+  object-fit: cover;
+}
+
+.subheading,
+.subheading_top {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+}
+
+.subheading_col {
+  text-align: center;
+  padding: 20px;
+}
+
+.reasons_container {
+  display: flex;
+}
+
+.reason_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 0.9rem;
+}
+
+.reason_text {
+  text-align: justify;
+  font-size: 0.9rem;
+  padding: 10px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro_img_col {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .reasons_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reasons_col {
+    display: block;
+    width: 80vw;
+  }
+}

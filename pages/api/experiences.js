@@ -20,14 +20,13 @@ export default function handler(req, res) {
     if (
       !title ||
       title.trim() === "" ||
-      !description ||
-      description.trim() === "" ||
+      description.length === 0 ||
       !slug ||
       !days
     ) {
-      res
-        .status(422)
-        .json({ message: "All required fields must be completed" });
+      // res
+      //   .status(422)
+      //   .json({ message: "All required fields must be completed" });
       return;
     }
 
@@ -45,6 +44,10 @@ export default function handler(req, res) {
       tips,
       features,
     };
+    console.log(newExperience);
+    res
+      .status(201)
+      .json({ message: "Added experience", experience: newExperience });
   }
   res.status(200).json({ message: "This works!" });
 }

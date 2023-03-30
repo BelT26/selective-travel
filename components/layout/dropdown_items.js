@@ -4,20 +4,17 @@ const dropdownItems = [
     slug1: "/concierge",
     dropdowns: [
       {
+        title: "About Italy",
+        slug2: "/italy",
+      },
+      {
         title: "About The Area",
         slug2: "/area",
       },
+
       {
-        title: "Tips",
-        slug2: "/tips",
-      },
-      {
-        title: "Restaurants",
-        slug2: "/restaurants",
-      },
-      {
-        title: "Fun and Wellness",
-        slug2: "/fun-wellness",
+        title: "Resort Information",
+        slug2: "/resort-info",
       },
     ],
   },

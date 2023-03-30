@@ -1,0 +1,36 @@
+.resort_summary {
+  padding: 40px;
+}
+
+.resort_heading {
+  margin: 20px auto;
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+}
+
+.summary_text {
+  margin-top: 20px;
+}
+
+.link {
+  color: whitesmoke;
+}
+
+.link:hover,
+.link:active {
+  color: rgb(147, 172, 223);
+}
+
+@media screen and (max-width: 768px) {
+  .summary_text {
+    margin-top: 20px;
+  }
+
+  .resort_heading {
+    text-align: center;
+  }
+
+  .excursion_divider {
+    margin-top: 15px;
+  }
+}

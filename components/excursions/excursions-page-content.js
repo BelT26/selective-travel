@@ -31,7 +31,7 @@ function ExcursionsPageContent() {
           scelerisque.
         </p>
       </Container>
-      <ExcursionListCopy />
+      <ExcursionList />
     </>
   );
 }
