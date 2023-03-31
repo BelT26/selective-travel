@@ -13,3 +13,13 @@
   color: rgb(223, 182, 79);
   font-size: 3rem;
 }
+
+.transfer_category {
+  font-weight: 300;
+  color: rgb(223, 182, 79);
+}
+
+.transport_info_row {
+  min-height: 55vh;
+  margin-top: 30px;
+}

@@ -54,6 +54,18 @@ const dropdownItems = [
         title: "All Transfers",
         slug2: "/",
       },
+      {
+        title: "Private Cars and Minibuses",
+        slug2: "/",
+      },
+      {
+        title: "Luxury Transfers",
+        slug2: "/",
+      },
+      {
+        title: "Small Coaches",
+        slug2: "/",
+      },
     ],
   },
 ];
